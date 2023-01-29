@@ -17,10 +17,6 @@ function HomeScreen({navigation}) {
   const [isEnabled, setIsEnabled] = useState(false);
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
-
-
-
-  
   Network.getNetworkStateAsync().then(data => {
     console.log({data})
   });
